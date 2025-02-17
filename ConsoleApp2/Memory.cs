@@ -14,7 +14,6 @@ namespace Calculator
         {
             memoryItems.Add(new MemoryItem(value));
         }
-
         public void Clear()
         {
             memoryItems.Clear();

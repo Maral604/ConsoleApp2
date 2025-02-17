@@ -17,19 +17,6 @@ namespace Calculator
         {
             Result -= number;
         }
-
-        public void Multiply(double number)
-        {
-            Result *= number;
-        }
-
-        public void Divide(double number)
-        {
-            if (number != 0)
-                Result /= number;
-            else
-                Console.WriteLine("0-t huvaagdahgui.");
-        }
         public void Clear()
         {
             Result = 0;

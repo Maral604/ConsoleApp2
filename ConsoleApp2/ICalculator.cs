@@ -10,8 +10,6 @@ namespace Calculator
     {
         void Add(double number);
         void Sub(double number);
-        void Multiply(double number);
-        void Divide(double number);
         void Clear();
     }
 }
