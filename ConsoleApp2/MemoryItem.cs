@@ -3,15 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculator;
 
 namespace Calculator
 {
-    public class MemoryItem
-    {
-        public double Value { get; private set; }
-        public MemoryItem(double value)
+    public class Memoryitem : ICalculator
+{
+        public double SanasanToo { get; private set; }
+        public Memoryitem(double sanasanToo)
         {
-            Value = value;
+            this.SanasanToo = sanasanToo;
         }
+        public void Add(double too)
+        {
+            this.SanasanToo += too;
+        }
+        public void Sub(double too)
+        {
+            this.SanasanToo -= too;
+        }
+        public void Clear()
+        {
+            this.SanasanToo = 0;
+        }
+
     }
+
 }
+
+

@@ -13,18 +13,20 @@ namespace Calculator
             calc.Result = double.Parse(Console.ReadLine());
 
             calc.Add(10);
-            Console.WriteLine($"+10= {calc.Result}");
-
             calc.Sub(5);
-            Console.WriteLine($"-5=: {calc.Result}");
+            Console.WriteLine($"+10-5= {calc.Result}");
 
-            memory.Save(calc.Result);
-            Console.WriteLine("Memory-d hadgalagdlaa.");
+            Memoryitem savedItem = memory.Save(calc.Result);
+            Console.WriteLine("Saved: " + savedItem.SanasanToo);
 
+            savedItem.Add(5);
+            Console.WriteLine("+5 memory: " + savedItem.SanasanToo);
+
+            List<Memoryitem> allMemories = memory.GetAll();
             Console.WriteLine("Memory:");
-            foreach (var item in memory.GetAll())
+            foreach (var item in allMemories)
             {
-                Console.WriteLine(item.Value);
+                Console.WriteLine(item.SanasanToo);
             }
             memory.Clear();
         }

@@ -8,20 +8,22 @@ namespace Calculator
 {
     public class Memory
     {
-        private List<MemoryItem> memoryItems = new List<MemoryItem>();
-
-        public void Save(double value)
+        public List<Memoryitem> memories = new List<Memoryitem>();
+        public Memoryitem Save(double too)
         {
-            memoryItems.Add(new MemoryItem(value));
+            Memoryitem item = new Memoryitem(too);
+            memories.Add(item);
+            return item;
+
+        }
+        public List<Memoryitem> GetAll()
+        {
+            return memories;
         }
         public void Clear()
         {
-            memoryItems.Clear();
+            memories.Clear();
         }
 
-        public List<MemoryItem> GetAll()
-        {
-            return memoryItems;
-        }
     }
 }

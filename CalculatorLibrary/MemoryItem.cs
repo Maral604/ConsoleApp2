@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 
 namespace CalculatorLibrary
 {
-    public class MemoryItem
+    public class Memoryitem : ICalculator
     {
-        public double Value { get; private set; }
-        public MemoryItem(double value)
+        private double sanasanToo;
+        public Memoryitem(byte sanasanToo)
         {
-            Value = value;
+            this.sanasanToo = sanasanToo;
         }
+        public byte SanasanToo { get; }
+        public void Add(double too)
+        {
+            this.sanasanToo += too;
+        }
+        public void Sub(double too)
+        {
+            this.sanasanToo -= too;
+        }
+        public void Clear()
+        {
+            this.sanasanToo = 0;
+        }
+
     }
+
 }

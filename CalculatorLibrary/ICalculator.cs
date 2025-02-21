@@ -8,8 +8,8 @@ namespace CalculatorLibrary
 {
     internal interface ICalculator
     {
-        double Add(double number);
-        double Sub(double number);
+        void Add(double number);
+        void Sub(double number);
         void Clear();
     }
 }
