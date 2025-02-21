@@ -8,8 +8,9 @@ namespace Calculator
         static void Main(string[] args)
         {
             MainCalculator calc = new MainCalculator();
-
             Memory memory = new Memory();
+
+            calc.Result = double.Parse(Console.ReadLine());
 
             calc.Add(10);
             Console.WriteLine($"+10= {calc.Result}");

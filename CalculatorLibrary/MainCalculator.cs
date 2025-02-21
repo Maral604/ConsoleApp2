@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace CalculatorLibrary
 {
-    public class MainCalculator : CalculatorBase, ICalculator
+    public class MainCalculator : CalculatorBase,ICalculator
     {
         public double Add(double number)
         {
