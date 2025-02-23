@@ -8,16 +8,14 @@ namespace CalculatorLibrary
 {
     public class MainCalculator : CalculatorBase,ICalculator
     {
-        public double Add(double number)
+        public void Add(double number)
         {
             Result += number;
-            return Result;
         }
 
-        public double Sub(double number)
+        public void Sub(double number)
         {
             Result -= number;
-            return Result;
         }
         public void Clear()
         {

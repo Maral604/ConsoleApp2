@@ -8,23 +8,22 @@ namespace CalculatorLibrary
 {
     public class Memoryitem : ICalculator
     {
-        private double sanasanToo;
-        public Memoryitem(byte sanasanToo)
+        public double SanasanToo { get; private set; }
+        public Memoryitem(double sanasanToo)
         {
-            this.sanasanToo = sanasanToo;
+            this.SanasanToo = sanasanToo;
         }
-        public byte SanasanToo { get; }
         public void Add(double too)
         {
-            this.sanasanToo += too;
+            this.SanasanToo += too;
         }
         public void Sub(double too)
         {
-            this.sanasanToo -= too;
+            this.SanasanToo -= too;
         }
         public void Clear()
         {
-            this.sanasanToo = 0;
+            this.SanasanToo = 0;
         }
 
     }
