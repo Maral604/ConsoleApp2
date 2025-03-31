@@ -14,7 +14,7 @@ namespace CalculatorLibrary
         /// <summary>
         /// Байгуулагч Function 
         /// </summary>
-
+        private Memory sanahoi; //Sanah oin objecttoi reference hiih huvisagch
         public MainCalculator() { 
             Result = 0;
         }
@@ -50,6 +50,32 @@ namespace CalculatorLibrary
         public void Clear()
         {
             Result = 0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public Memory GetSanahoi()
+        {
+            return sanahoi;
+        }
+
+        /// <summary>
+        /// Memory хэсэг дээр хэрэглэгчийн оруулсан тоог нэмэх
+        /// </summary>
+        /// <param name="value"> Хэрэглэгчийн оруулсан тоо</param>
+        public Memoryitem SaveMemory(double value)
+        {
+            return sanahoi.Save(value);
+        }
+
+        /// <summary>
+        /// Memory хэсгийг бүгдийг нь арилгах
+        /// </summary>
+        public void ClearMemory()
+        {
+            sanahoi.Clear();
         }
     }
 }
