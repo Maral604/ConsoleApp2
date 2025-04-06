@@ -17,6 +17,7 @@ namespace CalculatorLibrary
         private Memory sanahoi; //Sanah oin objecttoi reference hiih huvisagch
         public MainCalculator() { 
             Result = 0;
+            sanahoi = new Memory();
         }
         /// <summary>
         /// Байгуулагч Function

@@ -354,6 +354,7 @@
             Margin = new Padding(2);
             Name = "Form1";
             Text = "Maral's Calculator";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -231,7 +231,7 @@ namespace WinFormsApp1
             this.Location = currentWindowLocation;
             this.Size = currentWindowSize;
         }
-private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
 
         }
@@ -242,6 +242,11 @@ private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWor
         }
 
         private void textBoxResult_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
